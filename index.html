@@ -141,27 +141,25 @@
     <audio id="audio-player" preload="auto"></audio>
     <script>
         // Image logic
-    const baseUrl = "https://hw-adbw.onrender.com";
+    const images = [
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (1)/LRP.jpg", audio: "null" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/1.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/1.mp3" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/2.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/2.mp3" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/3.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/3.mp3" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/4.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/4.mp3" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/5.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/5.mp3" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/6.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/6.mp3" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/7.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/7.mp3" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/8.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/8.mp3" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/9.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/9.mp3" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/10.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/10.mp3" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/11.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/11.mp3" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/11.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/12.mp3" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/11.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/13.mp3" },
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (3)/11.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (3)/14.mp3" },
 
-const images = [
-    { src: `${baseUrl}/images/set%20(1)/LRP.jpg`, audio: "null" },
-    { src: `${baseUrl}/images/set%20(3)/1.jpg`, audio: `${baseUrl}/audio/set%20(3)/1.mp3` },
-    { src: `${baseUrl}/images/set%20(3)/2.jpg`, audio: `${baseUrl}/audio/set%20(3)/2.mp3` },
-    { src: `${baseUrl}/images/set%20(3)/3.jpg`, audio: `${baseUrl}/audio/set%20(3)/3.mp3` },
-    { src: `${baseUrl}/images/set%20(3)/4.jpg`, audio: `${baseUrl}/audio/set%20(3)/4.mp3` },
-    { src: `${baseUrl}/images/set%20(3)/5.jpg`, audio: `${baseUrl}/audio/set%20(3)/5.mp3` },
-    { src: `${baseUrl}/images/set%20(3)/6.jpg`, audio: `${baseUrl}/audio/set%20(3)/6.mp3` },
-    { src: `${baseUrl}/images/set%20(3)/7.jpg`, audio: `${baseUrl}/audio/set%20(3)/7.mp3` },
-    { src: `${baseUrl}/images/set%20(3)/8.jpg`, audio: `${baseUrl}/audio/set%20(3)/8.mp3` },
-    { src: `${baseUrl}/images/set%20(3)/9.jpg`, audio: `${baseUrl}/audio/set%20(3)/9.mp3` },
-    { src: `${baseUrl}/images/set%20(3)/10.jpg`, audio: `${baseUrl}/audio/set%20(3)/10.mp3` },
-    { src: `${baseUrl}/images/set%20(3)/11.jpg`, audio: `${baseUrl}/audio/set%20(3)/11.mp3` },
-    { src: `${baseUrl}/images/set%20(3)/12.jpg`, audio: `${baseUrl}/audio/set%20(3)/12.mp3` },
-    { src: `${baseUrl}/images/set%20(3)/13.jpg`, audio: `${baseUrl}/audio/set%20(3)/13.mp3` },
-    { src: `${baseUrl}/images/set%20(3)/14.jpg`, audio: `${baseUrl}/audio/set%20(3)/14.mp3` },
-    { src: `${baseUrl}/images/set%20(1)/Submit.jpg`, audio: "null" }
-];
-
+    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (1)/Submit.jpg", audio: "null" }
+    ];
 
 const imageElement = document.getElementById('homework-image');
 const audioPlayer = document.getElementById('audio-player');
